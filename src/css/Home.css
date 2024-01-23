@@ -1,0 +1,46 @@
+/* Home.css */
+
+h2{
+    font-size: 40px;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: black; /* Set text color to black */
+    text-align: center;
+  }
+  
+  header, main, footer {
+    padding: 10px;
+  }
+  
+  .main {
+    flex: 1;
+  }
+  
+  .cta-buttons {
+    margin-top: 300px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  

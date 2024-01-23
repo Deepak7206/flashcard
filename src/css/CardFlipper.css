@@ -1,0 +1,124 @@
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .block {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .button:hover {
+    background-color: #45a049;
+  }
+
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+#languageCardHintBlock h2 {
+  width: 100%;
+}
+
+#languageCardHintBlock .button {
+  margin: 5px;
+   display: flex;
+  flex-direction: row;
+}
+
+ #cardDisplayLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.button.play-button {
+  /* Add styles for your play button icon, e.g., using a background image or icon font */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.click-me-block {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#cardSelectionBlock {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkbox-group label {
+    margin: 5px;
+    display: flex;
+    align-items: center; /* Center checkboxes vertically */
+  }
+  
+  .checkboxes {
+    margin: 5px;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Center checkboxes vertically */
+    width: auto;
+  }
+  
+  .checkboxes input {
+    margin-right: 5px;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

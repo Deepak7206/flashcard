@@ -1,0 +1,178 @@
+/* CardForm.css */
+
+.card-form {
+  width: 400px;
+  max-width: 100%;
+}
+
+.card-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.card-form input,
+.card-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.card-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-form button:hover {
+  background-color: #45a049;
+}
+
+/* Reuse header styles from Dashboard.css */
+
+.card-form-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-form-header h1 {
+  margin: 0;
+}
+
+.card-form-header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-form-header ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.card-form-header ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.card-form-header ul li a:hover {
+  text-decoration: underline;
+}
+
+.sound-wave {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+/* AddCard.css */
+/* .dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+} */
+
+.card-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 20px;
+  /* margin: 10px; */
+}
+
+.card-form-container form {
+  flex: 1; /* Take up remaining space */
+  margin-right: 20px; /* Adjust the margin between form and gallery */
+}
+
+
+/* .image-gallery-container {
+width: 300px; 
+} */
+.image-gallery-container {
+  flex: 1; 
+}
+
+.add-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.add-card-container .card-form-container,
+.add-card-container .image-gallery-container {
+  flex: 0 0 calc(48% - 10px); /* Adjust the width and gap as needed */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.add-card-container .gallery-thumbnails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Add margin as needed */
+}
+
+.add-card-container .gallery-thumbnails img.selected {
+  border: 2px solid #4caf50; /* Add a border or any other style to indicate selection */
+}
+
+.add-card-container .gallery-thumbnails img {
+  flex: 0 0 calc(33.3333% - 10px); /* Adjust the width and gap as needed */
+  cursor: pointer;
+  /* margin-right: 10px;  */
+  transition: border 0.3s ease-in-out;
+}
+
+
+.card-form-container,
+.image-gallery-container {
+  flex: 0 0 calc(48% - 10px); /* Adjust the width and gap as needed */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.image-gallery {
+background-color: #f0f0f0;
+padding: 10px;
+}
+
+.gallery-thumbnails {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+max-height: 400px;
+overflow-y: auto;
+}
+
+.gallery-thumbnails img {
+width: 100%; /* Adjust the width to fit the container */
+/* max-width: 100%; */
+height: auto;
+margin-bottom: 10px;
+cursor: pointer;
+/* margin: 5px; */
+}
+
+
+/* .gallery-thumbnails img {
+  width: 100px; 
+  height: auto;
+  cursor: pointer;
+} */
+
+.selected {
+  border: 2px solid blue; /* Add a border or any other style for the selected image */
+}
+
+
+/* .audio-recorder {
+  display: none;
+} */
+
+
